@@ -1,0 +1,213 @@
+/*Global Styles
+-------------------*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Questrial', sans-serif; 
+    margin: 0; 
+}
+h1, h2 {
+    font-family: 'Caveat', cursive; 
+    font-weight: 400; 
+    text-align: center;
+}
+h1 {
+    font-size: 100px;
+    padding: 125px 0px 20px 0px;
+}
+h2 {
+    font-size: 50px;
+    margin-top: 0; 
+    margin-bottom: 20px;
+}
+h3 {
+    margin: 0; 
+}
+a {
+    color: #3B0D11; 
+}
+a:hover {
+    text-decoration: none; 
+    color: #748386;
+}
+.content-wrap {
+   max-width: 900px; 
+   margin: 0 auto; 
+   padding: 60px 50px;
+   overflow: hidden;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+.btn { /* this is for the download button */
+    text-decoration: none;
+    background:#748386;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+}
+/* Header and Footer
+-----------------------*/
+
+header, footer 
+
+/*header*/
+#about {
+  background: linear-gradient(rgba(116, 131, 134, 0.4), rgba(116, 131, 134, 0.4)), url(http://res.cloudinary.com/digu51ppj/image/upload/v1527652949/Portfolio/trent-erwin-338084-unsplash.jpg) no-repeat fixed;
+  background-size: cover;
+  height: 695px;
+}
+header {
+    padding-top: 50px;
+    position: relative; /* absolute, fixed, static and inherit are other options for positioning */
+    color: white; 
+}
+.profile-img {
+    border-radius: 6px; /* radius around the border of the picture */
+}    
+
+header h1, header h2 {
+    margin: 0; /* sets the margin around h1's and h2's in the header, removes margin */
+}
+/* 
+header p {
+    color: ; sets the color of the paragraphs under the header 
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+} */
+.download {  /* download button, sets positioning on web page */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+/* footer */
+footer { /*  */
+    text-align: center;
+}
+.contact-info {
+    padding: 20px, 20px, 20px, 20px;
+}
+.contact-info, a {
+    padding: 10px;
+    display: inline-block;
+}
+.contact-info, i {
+    font-size: 50px;
+    padding-top: 0;
+}
+
+/*Navigation
+----------------------*/
+nav {
+    text-align: center;
+    background: white;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    /* can also use this to expand the navigation background and make it even just like using width: 100%
+    left: 0;
+    right: 0;
+    */
+}
+nav a {
+    display: inline-block; /* doesn't add a line break after the element so the element can stand next to others */
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700px;
+}
+
+
+/*Bootcamps Portfolio
+----------------------*/
+.container {
+    padding: 20px; 
+}
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #6A3937;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Personal/Freelance Portfolio
+--------------------------*/
+
+
+
+/* apply this style to any paragraphs that follow the h3 tag */
+p + h3 { 
+    margin-top: 30px;
+}
+
+/* Media Queries 
+---------------*/
+
+/* targets any screen 800 pixels or bigger */
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+@media (min-width: 800px) { /* specifically for my columns in the work section, it helps the two columns turn into one when screen is 800 pixels or bigger */
+    .col-narrow {
+        width: 30%; /*size of the narrow columns*/
+        float: left;  
+    }
+    .col-wide {
+        width: 70%; 
+        float: left;
+        padding-left: 20px;
+    }
+}
+/* targets any screen that is 799 pixels or smaller */
+@media (max-width: 799px) {
+    header{ /* keeps the image aligned center if 799 pixels or smaller */
+        text-align: center;
+    }
+    .profile-img {/* same as a bove but with width */
+        width: 200px;
+    }
+}
