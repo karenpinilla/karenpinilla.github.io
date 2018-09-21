@@ -1,0 +1,74 @@
+/*RGB(131, 167, 105)*/
+body {
+	background-color: beige;
+	margin: 0;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+#container {
+	max-width: 600px; /*makes the width to a max*/
+	margin: 20px auto; /*c enters the grid */
+}
+.square {
+	width: 30%; /* the squares take up 30 percent of the container not the whole page */
+	background-color: purple;
+	padding-bottom: 30%;
+	float: left;
+	margin: 1.66%; /* the total of width and margin equals 100% of the container*/
+	border-radius: 20%;
+	transition: background 0.6s;
+	-webkit-transition: background 0.6s;
+	-moz-transition: background 0.6s;
+}
+
+#stripe {
+	background-color: white;
+	height: 30px;
+	text-align: center;
+	color: black;
+}
+
+h1 {
+	color: white;
+	line-height: 1.1;
+	text-align: center;
+	background-color: rgb(156, 215, 203);
+	margin: 0;
+	font-weight: normal;
+	text-transform: uppercase;
+	padding: 20px 0;
+}
+
+#colorDisplay {
+	font-size: 200%;
+}
+
+#message {
+	display: inline-block;
+	width: 20%;
+}
+
+button {
+	border: none;
+	background-color: : none;
+	text-transform: uppercase;
+	height: 100%;
+	font-weight: 700;
+	color: rgb(156, 215, 203) ;
+	letter-spacing: 1px;
+	font-size: inherit;
+	transition: all .3s;
+	-webkit-transition: background 0.3s;
+	-moz-transition: background 0.3s;
+	outline: none;
+}
+
+button:hover {
+	color: white;
+	background-color: rgb(156, 215, 203);
+}
+
+.selected {
+	background-color: rgb(156, 215, 203);
+	color: white;
+}
