@@ -1,35 +1,49 @@
 /*Global Styles
 -------------------*/
-html {
-    box-sizing: border-box;
-}
 *, *:before, *:after {
     box-sizing: inherit;
 }
 * {
-    box-sizing: border-box;
-}
-body {
+    box-sizing: border-box;	
+    transition: all .1s ease; 
     font-family: 'Questrial', sans-serif; 
-    margin: 0; 
+    margin: 0;
 }
+
+html, body {
+    height: 100%;
+}
+
 h1, h2 {
-    font-family: 'Caveat', cursive; 
+    font-family: 'Libre Baskerville', serif;
     font-weight: 400; 
     text-align: center;
 }
+
 h1 {
+    font-family: 'caveat', cursive;
     font-size: 100px;
     padding: 125px 0px 20px 0px;
 }
+
 h2 {
-    font-size: 50px;
+    font-size: 35px;
     margin-top: 0; 
     margin-bottom: 20px;
 }
 h3 {
     margin: 0; 
+    font-size: 22px;
+    padding: 20px 0px 20px 0px;
+    letter-spacing: 0.04em;
 }
+
+.paragraph {
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    padding-left: 50px;
+}
+
 a {
     color: #3B0D11; 
 }
@@ -70,9 +84,7 @@ header {
     position: relative; /* absolute, fixed, static and inherit are other options for positioning */
     color: white; 
 }
-.profile-img {
-    border-radius: 6px; /* radius around the border of the picture */
-}    
+   
 
 header h1, header h2 {
     margin: 0; /* sets the margin around h1's and h2's in the header, removes margin */
@@ -124,8 +136,8 @@ nav a {
     display: inline-block; /* doesn't add a line break after the element so the element can stand next to others */
     padding: 15px 20px;
     text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 700px;
+    /* text-transform: uppercase; */
+    letter-spacing: 0.04em;
 }
 
 
@@ -134,12 +146,13 @@ nav a {
 .container {
     padding: 20px; 
 }
-div.gallery {
-    border: 1px solid #ccc;
-}
 
-div.gallery:hover {
-    border: 1px solid #6A3937;
+div.gallery {
+    margin: 5px;
+    float: left;
+    width: 350px;
+    max-width: 100%;
+    padding-left: 45px
 }
 
 div.gallery img {
@@ -152,7 +165,7 @@ div.desc {
     text-align: center;
 }
 
-.responsive {
+.img-responsive {
     padding: 0 6px;
     float: left;
     width: 24.99999%;
@@ -163,16 +176,40 @@ div.desc {
     display: table;
     clear: both;
 }
-
-/*Personal/Freelance Portfolio
+/*Skills
 --------------------------*/
 
-
-
-/* apply this style to any paragraphs that follow the h3 tag */
-p + h3 { 
-    margin-top: 30px;
+.tech-skills {
+    margin:0;
+    align-content: center;
+    line-height: 30px;
+    letter-spacing: 3em;
+    padding-left: 50px;
+    text-align: center;
 }
+
+.tech-skills i {
+   color: #3B0D11; 
+}
+
+
+.soft-skills {
+    text-align: center;
+
+}
+.soft-skills li {
+   /* list-style-type: none; */
+   display: inline-block;
+   padding-right: 20px;
+   font-size: 18px;
+}
+
+p.tags {
+    font-size: 18px;
+    padding-top: 20px;
+    letter-spacing: .04em;
+}
+
 
 /* Media Queries 
 ---------------*/
